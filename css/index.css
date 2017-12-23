@@ -1,0 +1,222 @@
+/*样式的重置*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #787978;
+}
+ul,
+li {
+  list-style: none;
+}
+.section h2 {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.section h2 span {
+  display: block;
+  width: 2em;
+  height: 3px;
+  background-color: #E87E04;
+  margin: 5px auto;
+}
+.sectionOne {
+  overflow: hidden;
+  position: relative;
+}
+.sectionOne .sectionOneBox {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+}
+.sectionOne .sectionOneMsg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.sectionOne .sectionOneMsg h1 {
+  font-family: cursive, 'Lato', sans-serif;
+  font-size: 70px;
+  font-weight: 400;
+}
+.sectionOne .sectionOneMsg p {
+  letter-spacing: 3px;
+  font-size: 30px;
+  margin: 40px 0px;
+}
+.sectionOne .sectionOneMsg a {
+  width: 150px;
+  height: 50px;
+  margin: 0 5px;
+  font-size: 16px;
+  line-height: 50px;
+  text-align: center;
+  padding: 0;
+}
+.sectionOne .sectionOneMsg a:nth-of-type(1) {
+  background-color: #2c3e50;
+  color: #ffffff;
+}
+.sectionTwo {
+  background-color: #fafafa;
+  color: #787978;
+}
+.sectionTwo .navbar {
+  background-color: #2c3e50;
+  padding: 0 20px;
+}
+.sectionTwo .navbar div li.active a {
+  background-color: #2c3e50;
+  color: #E87E04;
+}
+.sectionTwo .navbar div li.active a:hover {
+  background-color: #2c3e50;
+  color: #E87E04;
+}
+.sectionTwo .navbar div li.active a:focus {
+  background-color: #2c3e50;
+  color: #E87E04;
+}
+.sectionTwo .navbar div a {
+  color: #ffffff;
+  padding: 0 15px;
+  height: 80px;
+  line-height: 80px;
+}
+.sectionTwo .navbar div a:hover {
+  color: #E87E04;
+}
+.sectionTwo .navbar div a:focus {
+  color: #ffffff;
+  background-color: #2c3e50;
+}
+.sectionTwo .navbar div .navbar-toggle {
+  margin: 20px 15px;
+}
+.sectionTwo .aboutMe {
+  padding-top: 100px;
+  text-align: center;
+}
+.sectionTwo .aboutMe img {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+  border-radius: 50%;
+}
+.sectionTwo .aboutMe p {
+  text-align: left;
+}
+.sectionTwo .aboutMe p span {
+  padding: 10px;
+  display: block;
+  text-indent: 2em;
+  line-height: 1.5em;
+}
+.sectionOneThree {
+  background: url("../images/services-bg.jpg") no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+}
+.sectionOneThree .qzyx {
+  color: #787978;
+}
+.sectionOneThree .qzyx div {
+  text-align: center;
+}
+.sectionOneThree .qzyx div img {
+  width: 80px;
+}
+.sectionOneThree .qzyx div h4 {
+  margin-top: 32px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  color: #E87E04;
+}
+.sectionOneFour {
+  text-align: center;
+  padding-top: 100px;
+}
+.sectionOneFour .imgs img {
+  margin-top: 10px;
+}
+.sectionOneFive {
+  background: url("../images/skills-bg.jpg") no-repeat center / cover;
+}
+.sectionOneSix {
+  padding-top: 100px;
+  background-color: #fafafa;
+}
+.sectionOneSix .exp {
+  position: relative;
+}
+.sectionOneSix .exp .left {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #fafafa;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 30px;
+}
+.sectionOneSix .exp > span {
+  display: block;
+  margin: 0 auto;
+  width: 0;
+  height: 100px;
+  border-left: 1.5px solid #eee;
+}
+.sectionOneSix .exp .rg {
+  float: left;
+  text-align: center;
+  position: absolute;
+}
+.sectionOneSix .exp .rg h4 {
+  font-weight: bold;
+}
+.sectionOneSix .exp .rg p {
+  color: #E87E04;
+}
+.sectionOneSix .exp .rg:first-child {
+  top: 5px;
+  left: 50%;
+  margin-left: -380px;
+}
+.sectionOneSix .exp .rg:last-child {
+  bottom: 5px;
+  left: 50%;
+  margin-left: 85px;
+}
+.sectionOneSeven {
+  background: url("../images/achivements-bg.jpg") no-repeat center / cover;
+}
+.scale {
+  animation: fadescale 3s forwards;
+  animation-timing-function: linear;
+}
+@keyframes fadescale {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}

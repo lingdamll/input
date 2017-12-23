@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<div id="dv"></div>
+</body>
+<script src="./lib/Konva-1.0.2/konva.js"></script>
+<script>
+    /*声明舞台和图层*/
+    var stage = new Konva.Stage({
+        container: 'dv',
+        width: window.innerWidth,
+        height: window.innerHeight
+    });
+    var layer = new Konva.Layer();
+    stage.add(layer);
+
+    /*生成形状对象,并设置参数*/
+    var ring = new Konva.Ring({
+        x: 150,
+        y: 150,
+        innerRadius: 50,
+        outerRadius: 100,
+        fill: 'pink',
+        stroke: 'blue',
+    });
+    var arc = new Konva.Arc({
+        x: 250,
+        y: 250,
+        innerRadius: 70,
+        outerRadius: 100,
+        stroke: 'green',
+        fill: 'pink',
+        angle: 0,
+        rotation: -90
+    });
+    var text = new Konva.Text({
+        x: 250,
+        y: 250,
+        width:120,
+        height:120,
+        offsetX:30,
+        align:'right',
+        padding:-20,
+        fill:'red',
+        text: 'Simple Text',
+        fontSize: 30,
+        fontFamily: 'Calibri',
+        fill: 'green'
+    });
+    layer.add(text);
+    layer.add(ring);
+    layer.add(arc);
+//    var tween = new Konva.Tween({
+//        node: arc,
+//        duration: 3,
+//        angle: 360,
+////        rotation: Math.PI * 2,
+//        opacity: 1,1
+//        strokeWidth: 6
+//    });
+
+    //    tween.play();
+    arc.to({
+        angle: 360,
+        duration: 3,
+        fill: 'green'
+    })
+
+    //使用绘图方法
+    layer.draw();
+</script>
+</html>

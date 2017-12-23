@@ -1,0 +1,24 @@
+﻿1.练习bootstrap 
+
+2 学习seo
+
+3fullpage的使用 一些常用的参数
+	anchors: ['page1', 'page2', 'page3'],
+        menu: '#menu',
+        sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+        scrollBar:true,
+        afterLoad: function (anchorLink, index) {
+            //
+            console.log(index);
+
+4动画效果 c3的自定义动画效果函数和属性不是很熟悉
+
+5fill-mode属性,规定动画不执行的时候的默认的样式
+
+6random取的是0-1,如果是取天花板函数,那么可以取到1,如果是地板函数那么可以取到0 ,如果是四舍五入,那么都可以取到
+
+7row 出现滚动条
+
+8彻底分离 背景盒子和字体盒子让其互不影响
+
+9
